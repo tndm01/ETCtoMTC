@@ -1,0 +1,33 @@
+USE [ETC_RFID_TN]
+GO
+
+/****** Object:  Table [dbo].[SYNC_JobList]    Script Date: 3/19/2017 10:21:56 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[SYNC_JobList](
+	[JobID] [int] IDENTITY(1,1) NOT NULL,
+	[JobName] [varchar](500) NOT NULL,
+	[SubFolder] [varchar](500) NULL,
+	[Interval] [int] NULL,
+	[JobGroup] [int] NOT NULL CONSTRAINT [DF_SYNC_JobList_JobGroup]  DEFAULT ((1)),
+	[IsRun] [bit] NULL,
+	[IsUsed] [bit] NULL,
+ CONSTRAINT [PK_SYNC_JobList] PRIMARY KEY CLUSTERED 
+(
+	[JobID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+

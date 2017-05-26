@@ -1,0 +1,29 @@
+
+/****** Object:  Table [dbo].[SYNC_DataTracking]    Script Date: 3/15/2017 11:48:23 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[SYNC_DataTracking](
+	[TrackingID] [bigint] IDENTITY(1,1) NOT NULL,
+	[TableSource] [varchar](500) NOT NULL,
+	[Action] [varchar](100) NOT NULL,
+	[DataTracking] [xml] NOT NULL,
+	[SyncStatus] [int] NULL CONSTRAINT [DF_SYNC_DataTracking_SyncStatus]  DEFAULT ((0)),
+ CONSTRAINT [PK_SYNC_DataTracking_1] PRIMARY KEY CLUSTERED 
+(
+	[TrackingID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+

@@ -1,0 +1,45 @@
+﻿VÉ Lượt
+	Tên file: VELOUT_MAPHIEUXUAT_MANV_ACTION_yyyyMMHHddmmss.txt
+	Action(INSERT, UPDATE, DELETE)
+	Nội dung(Giave, soluong, vé đầu, vé cuối, mã nhân viên nhận, ngày tạo, Ca xuất, Ma NV xuất)
+Vé tháng Quý
+	Tên file: VETHANG_MAVE_SOXE_ACTION_yyyyMMddHHmmss.txt
+	Nội dung [Mã vé,Giá vé, Mã loại vé,Mã loại xe, số xe đăng ký, ngày bắt đầu, ngày kết thúc, ngày tạo,Giờ bán, Ca bán, Ma Nhân viên bán,Khách hàng,Địa chỉ khách hàng]
+Nhân viên
+	Tên file: Nhanvien_Action_MaNhanVien_TenKhongDau_yyyyMMddHHmmss.txt
+	Nội dung: [Ma Nhan vien, Mã tổ, Họ nhân viên, Tên nhân viên, tên không dấu, địa chỉ, điện thoại, ghi chú, mã trạm]
+Thông tin xe chuẩn
+	Tên file: Datasoxe_SOXE_Action_yyyyMMddHHmmss.txt
+	Nội dung: [số xe, mã loại vé, giá vé, ngày đăng ký, số đăng kiểm, tải trọng, trạng thái, ghi chú, nhân viên nhập, ngày nhập, trạng thái(mặc định là 0),cho phép hiện ghi chú, xe ưu tiên, ghi chú hiện thị ở làn, mã trạm]
+	Ghi chú: giá trị [xe ưu tiên] = 0 là xe thường, 1 là xe ưu tiên
+	
+	
+Vé Etag Tháng
+	Tên file: EtagThang_SOXE_ACTION_yyyyMMddHHmmss.txt
+	Nội dung: [Etag, Giá vé, mã loại vé, Số xe, ngày bắt đầu, ngày kết thúc, Mã nhân viên = VETC]
+
+Dữ liệu soát vé lượt
+	Tên file: VELUOT_MAVE_LAN_yyyyMMddHHmmss.txt
+	Nội dung:
+	([Mã giao dịch],[Thời gian giao dịch],[Số vé],[Giá vé],[Số xe nhận dạng],[Mã nhân viên],[Mã ca], [Mã làn],[Mã vé],[Mã trạm],[Là vé liên trạm])
+Dữ liệu soát vé Tháng
+	Vé tháng: VETHANG_MAVE_LAN_yyyyMMddHHmmss.txt
+	Nội dung: 
+	([Mã giao dịch],[Thời gian giao dịch],[Số vé],[Giá vé],[Số xe nhận dạng],[Mã nhân viên],[Mã ca], [Mã làn],[Mã vé],[Mã trạm],[Là vé liên trạm])
+Dữ liệu soát vé đặc biệt
+	Tên file: UUTIEN_MAGIAODICH_LoaiUUTIEN_LAN_yyyyMMddHHmmss.txt
+	Nội dung: [mã giai dịch, thời gian giao dịch, mã vé = TID, số xe nhận dạng, mã nhân viên, mã ca, mã làn, loại ưu tiên, 0, 0]
+Dữ liệu soát vé BTC
+	Tên file: BTC_MAGIAODICH_LAN_yyyyMMddHHmmss.txt
+	Nội dung: [mã giai dịch, thời gian giao dịch,mã vé = TID, loai xe, số xe nhận dạng, mã nhân viên, mã ca, mã làn, 0, 0]
+
+Dữ liệu giao dịch Etag
+	Tên file: ETAG_Soxedangky_LAN_yyyyMMddHHmmss.txt
+	Nội dung: ([Mã giao dịch],[Thời gian giao dịch],[Mã E-tag],[Giá vé],[Số xe nhận dạng],[Mã nhân viên],[Mã ca], [Mã làn],[Mã vé])
+
+Hình ảnh xe qua làn
+	Tên file: ~/HinhLan/yyyyMMddhh\LLL\yyyyMMddHHmmss_LLL.jpg
+	yyyyMMddHHmmss : [Mã giao dịch]
+	LLL : [Mã làn]
+Hình ảnh nhận dạng
+	Tên file: ~/HinhND/yyyyMMddhh\LLL\yyyyMMddHHmmss_LLL.jpg

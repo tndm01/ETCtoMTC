@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITD.ETC.VETC.Synchronization.GUI", "ITD.ETC.VETC.Synchronization.MtcAndEtc\ITD.ETC.VETC.Synchronization.GUI.csproj", "{258B48F2-401D-4B7A-8C3E-EB9FB649F2DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITD.ETC.VETC.Synchronization.Controller", "ITD.ETC.VETC.Synchonization.Controller\ITD.ETC.VETC.Synchronization.Controller.csproj", "{8957B3B4-65EE-45F3-A182-42C6DB6CBDD9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{258B48F2-401D-4B7A-8C3E-EB9FB649F2DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{258B48F2-401D-4B7A-8C3E-EB9FB649F2DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{258B48F2-401D-4B7A-8C3E-EB9FB649F2DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{258B48F2-401D-4B7A-8C3E-EB9FB649F2DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8957B3B4-65EE-45F3-A182-42C6DB6CBDD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8957B3B4-65EE-45F3-A182-42C6DB6CBDD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8957B3B4-65EE-45F3-A182-42C6DB6CBDD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8957B3B4-65EE-45F3-A182-42C6DB6CBDD9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
